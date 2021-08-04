@@ -11,12 +11,17 @@
 		F51E9AA026B9D3EF00B1E389 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E9A9F26B9D3EF00B1E389 /* PostTableViewCell.swift */; };
 		F51E9AA226B9D41F00B1E389 /* RecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E9AA126B9D41F00B1E389 /* RecommendTableViewCell.swift */; };
 		F51E9AAA26B9E39400B1E389 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E9AA926B9E39400B1E389 /* Post.swift */; };
+		F51E9AD226BAF41400B1E389 /* RecentlyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E9AD126BAF41400B1E389 /* RecentlyTableViewController.swift */; };
+		F51E9AD426BAF53200B1E389 /* RecentlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E9AD326BAF53200B1E389 /* RecentlyTableViewCell.swift */; };
+		F51E9AD626BB016300B1E389 /* SubscribeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E9AD526BB016300B1E389 /* SubscribeTableViewCell.swift */; };
 		F5EA5BE726B6816F001A7535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA5BE626B6816F001A7535 /* AppDelegate.swift */; };
 		F5EA5BE926B6816F001A7535 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA5BE826B6816F001A7535 /* SceneDelegate.swift */; };
 		F5EA5BEB26B6816F001A7535 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA5BEA26B6816F001A7535 /* FeedViewController.swift */; };
 		F5EA5BEE26B6816F001A7535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EA5BEC26B6816F001A7535 /* Main.storyboard */; };
 		F5EA5BF026B68171001A7535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EA5BEF26B68171001A7535 /* Assets.xcassets */; };
 		F5EA5BF326B68171001A7535 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EA5BF126B68171001A7535 /* LaunchScreen.storyboard */; };
+		F5EDE65826BB3B1400695CE3 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE65726BB3B1400695CE3 /* ProfileCollectionViewCell.swift */; };
+		F5EDE65A26BB3B5200695CE3 /* ProfileCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE65926BB3B5200695CE3 /* ProfileCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,9 @@
 		F51E9A9F26B9D3EF00B1E389 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		F51E9AA126B9D41F00B1E389 /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
 		F51E9AA926B9E39400B1E389 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F51E9AD126BAF41400B1E389 /* RecentlyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyTableViewController.swift; sourceTree = "<group>"; };
+		F51E9AD326BAF53200B1E389 /* RecentlyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyTableViewCell.swift; sourceTree = "<group>"; };
+		F51E9AD526BB016300B1E389 /* SubscribeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTableViewCell.swift; sourceTree = "<group>"; };
 		F5EA5BE326B6816F001A7535 /* Instagramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EA5BE626B6816F001A7535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5EA5BE826B6816F001A7535 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +40,8 @@
 		F5EA5BEF26B68171001A7535 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5EA5BF226B68171001A7535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5EA5BF426B68171001A7535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EDE65726BB3B1400695CE3 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5EDE65926BB3B5200695CE3 /* ProfileCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				F51E9AA126B9D41F00B1E389 /* RecommendTableViewCell.swift */,
+				F51E9AD326BAF53200B1E389 /* RecentlyTableViewCell.swift */,
 				F51E9A9F26B9D3EF00B1E389 /* PostTableViewCell.swift */,
 				F51E9A9D26B9D28500B1E389 /* StoriesTableViewCell.swift */,
+				F51E9AD526BB016300B1E389 /* SubscribeTableViewCell.swift */,
+				F5EDE65726BB3B1400695CE3 /* ProfileCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -75,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				F5EA5BEA26B6816F001A7535 /* FeedViewController.swift */,
+				F51E9AD126BAF41400B1E389 /* RecentlyTableViewController.swift */,
+				F5EDE65926BB3B5200695CE3 /* ProfileCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,9 +220,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51E9AD426BAF53200B1E389 /* RecentlyTableViewCell.swift in Sources */,
 				F5EA5BEB26B6816F001A7535 /* FeedViewController.swift in Sources */,
 				F51E9A9E26B9D28500B1E389 /* StoriesTableViewCell.swift in Sources */,
+				F5EDE65826BB3B1400695CE3 /* ProfileCollectionViewCell.swift in Sources */,
+				F5EDE65A26BB3B5200695CE3 /* ProfileCollectionViewController.swift in Sources */,
 				F51E9AA226B9D41F00B1E389 /* RecommendTableViewCell.swift in Sources */,
+				F51E9AD626BB016300B1E389 /* SubscribeTableViewCell.swift in Sources */,
+				F51E9AD226BAF41400B1E389 /* RecentlyTableViewController.swift in Sources */,
 				F51E9AA026B9D3EF00B1E389 /* PostTableViewCell.swift in Sources */,
 				F5EA5BE726B6816F001A7535 /* AppDelegate.swift in Sources */,
 				F51E9AAA26B9E39400B1E389 /* Post.swift in Sources */,

@@ -16,26 +16,40 @@ final class FeedViewController: UIViewController {
         case recommend
     }
 
-    @IBOutlet weak var feedTableView: UITableView!
+    //MARK: - IBOutlets
 
-    let cellTypes: [CellType] = [.stories, .startPost, .recommend, .post]
-    var posts: [Post] = []
+    @IBOutlet private weak var feedTableView: UITableView!
 
+    //MARK: - Private properties
+
+    private let cellTypes: [CellType] = [.stories, .startPost, .recommend, .post]
+    private var posts: [Post] = []
+
+
+    //MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        feedTableView.dataSource = self
-        feedTableView.delegate = self
-
-        generetarePosts()
+        setupView()
     }
+
+    //MARK: - Private methods
 
     private func generetarePosts() {
         posts += [Post(avatarImageName: "", nickname: "", postImageName: "", commentText: ""),
                   Post(avatarImageName: "", nickname: "", postImageName: "", commentText: "")]
     }
+
+    private func setupView() {
+        feedTableView.dataSource = self
+        feedTableView.delegate = self
+
+        generetarePosts()
+    }
 }
+
+//MARK:- UITableViewDataSource
 
 extension FeedViewController: UITableViewDataSource {
 
@@ -65,8 +79,6 @@ extension FeedViewController: UITableViewDataSource {
             return cell
         case .post:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as? PostTableViewCell else { return UITableViewCell() }
-            let post = posts[indexPath.row]
-            cell.configurePostCell(post: post)
             return cell
         case .startPost:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as? PostTableViewCell else { return UITableViewCell() }
@@ -77,6 +89,8 @@ extension FeedViewController: UITableViewDataSource {
         }
     }
 }
+
+//MARK: - UITableViewDelegate
 
 extension FeedViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

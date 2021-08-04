@@ -1,13 +1,13 @@
 //
-//  PostTableViewCell.swift
+//  SubscribeTableViewCell.swift
 //  Instagramm
 //
-//  Created by Vlad on 03.08.2021.
+//  Created by Vlad on 04.08.2021.
 //
 
 import UIKit
 
-final class PostTableViewCell: UITableViewCell {
+final class SubscribeTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -16,4 +16,5 @@ final class PostTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+
 }

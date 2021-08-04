@@ -7,9 +7,9 @@
 
 import UIKit
 
-class StoriesTableViewCell: UITableViewCell {
+final class StoriesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var scrollStoriesView: UIScrollView!
+    @IBOutlet private weak var scrollStoriesView: UIScrollView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,7 +19,6 @@ class StoriesTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
 
 }
