@@ -14,6 +14,11 @@ final class RecentlyTableViewController: UIViewController {
         case onThisWeek
     }
 
+    enum CellID {
+        static let recentlyCell = "RecentlyTableViewCell"
+        static let subscribeCell = "SubscribeTableViewCell"
+    }
+
     //MARK: - Private properties
 
     private let sectionType: [SectionType] = [.today, .onThisWeek]
@@ -38,10 +43,10 @@ extension RecentlyTableViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row % 2 == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecentlyTableViewCell") as? RecentlyTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: CellID.recentlyCell) as? RecentlyTableViewCell else { return UITableViewCell() }
             return cell
         } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SubscribeTableViewCell") as? SubscribeTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: CellID.subscribeCell) as? SubscribeTableViewCell else { return UITableViewCell() }
             return cell
         }
     }

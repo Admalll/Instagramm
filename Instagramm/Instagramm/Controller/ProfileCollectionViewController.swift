@@ -9,6 +9,10 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
 
+    enum CellID {
+        static let profileCell = "ProfileCollectionViewCell"
+    }
+
     // MARK: - IBOutlets
 
     @IBOutlet weak var storiesScrollView: UIScrollView!
@@ -29,7 +33,7 @@ extension ProfileViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProfileCollectionViewCell", for: indexPath) as? ProfileCollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellID.profileCell, for: indexPath) as? ProfileCollectionViewCell else { return UICollectionViewCell() }
         return cell
     }
 }

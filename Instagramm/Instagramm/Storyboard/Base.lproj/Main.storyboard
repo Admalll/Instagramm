@@ -163,7 +163,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="scrollStoriesView" destination="Lh5-Vg-j3Z" id="zqd-Yv-3Ul"/>
+                                            <outlet property="storiesScrollView" destination="Lh5-Vg-j3Z" id="zqd-Yv-3Ul"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostTableViewCell" rowHeight="400" id="GX6-f5-hIp" customClass="PostTableViewCell" customModule="Instagramm" customModuleProvider="target">

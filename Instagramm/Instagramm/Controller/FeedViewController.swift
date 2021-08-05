@@ -16,6 +16,14 @@ final class FeedViewController: UIViewController {
         case recommend
     }
 
+    enum Const {
+        enum CellID {
+            static let storiesCell = "StoriesTableViewCell"
+            static let postCell = "PostTableViewCell"
+            static let recomCell = "RecommendTableViewCell"
+        }
+    }
+
     //MARK: - IBOutlets
 
     @IBOutlet private weak var feedTableView: UITableView!
@@ -75,16 +83,16 @@ extension FeedViewController: UITableViewDataSource {
         let types = cellTypes[indexPath.section]
         switch types {
         case .stories:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "StoriesTableViewCell") as? StoriesTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Const.CellID.storiesCell) as? StoriesTableViewCell else { return UITableViewCell() }
             return cell
         case .post:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as? PostTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Const.CellID.postCell) as? PostTableViewCell else { return UITableViewCell() }
             return cell
         case .startPost:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as? PostTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Const.CellID.postCell) as? PostTableViewCell else { return UITableViewCell() }
             return cell
         case .recommend:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendTableViewCell") as? RecommendTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Const.CellID.recomCell) as? RecommendTableViewCell else { return UITableViewCell() }
             return cell
         }
     }
